@@ -11,3 +11,9 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+router-outlet ~ * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }

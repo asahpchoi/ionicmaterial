@@ -1,13 +1,13 @@
 <ion-header>
-
+  PoC
 </ion-header>
 <ion-content>
  
   <nav>
-    <a routerLink="/ionic" routerLinkActive="active">ionic</a>
-    <a routerLink="/d3" routerLinkActive="active">d3</a>
+    [<a routerLink="/ionic" routerLinkActive="active">ionic</a>]
+    [<a routerLink="/d3" routerLinkActive="active">d3</a>]
   </nav>
-  <main>
-    <router-outlet></router-outlet>
+  <main  [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <router-outlet #o="outlet"></router-outlet>
   </main>
 </ion-content>
