@@ -11,22 +11,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Ui1Component } from './shared/ui1/ui1.component';
+ 
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { Ui1Component } from './shared/ui1/ui1.component';
+import { D3Component } from './shared/d3/d3.component';
+ 
+ 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Ui1Component
+    Ui1Component,
+    D3Component
+ 
   ],
   entryComponents: [],
   imports: [
     BrowserModule, IonicModule.forRoot(), AppRoutingModule,
     BrowserAnimationsModule,
-
+ 
     FormsModule, ReactiveFormsModule,
     SharedModule,
   ],

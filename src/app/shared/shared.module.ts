@@ -13,6 +13,7 @@ import {
   MatInputModule,
   MatRippleModule
 } from '@angular/material';
+ 
 
 @NgModule({
   imports: [
@@ -36,6 +37,6 @@ import {
     MatFormFieldModule,
     MatInputModule,
   ],
-  declarations: []
+  declarations: [ ]
 })
 export class SharedModule { }
